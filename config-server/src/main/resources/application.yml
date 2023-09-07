@@ -13,10 +13,10 @@ spring:
     config:
       server:
         git:
-          uri: ****
-          default-label: main
-          username: ****
-          password: '****'
+          uri: https://github.com/sf-shtirlitz/twitter-kafka-microservices/blob/master/config-server-repository
+          default-label: master
+          username: ${GITHUB_USER}
+          password: ${GITHUB_PASSWORD}
           clone-on-start: true
     fail-fast: true
   security:
